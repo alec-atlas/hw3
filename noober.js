@@ -7,10 +7,13 @@ function pageLoad() {
   // to get started, try to write other parts of 'ride' to the JavaScript console in Chrome
   // e.g. ask 'ride' for its length or only grab the first member of the Array
   console.log(ride)
-  let passenger1 = ride[0]
-  let passenger2 = ride[1]
-  let passenger3 = ride[2]
 
+    let passenger1 = ride[0]
+    let passenger2 = ride[1]
+    let passenger3 = ride[2]
+
+  levelOfService = ('Noober X', 'Noober Purple', 'Noober XL')
+  
   if (ride.length > 1) {
     levelOfService = 'Noober Pool'
   } else if (ride.purplerequested = true) {
@@ -18,6 +21,8 @@ function pageLoad() {
   } else if (ride.numberOfPassengers > 3) {
     levelOfService = 'Noober XL'
   } else {levelOfService = 'Noober X'}
+
+  console.log(levelOfService)
 
   passenger1Name = passenger1.passengerDetails.first + ' ' + passenger1.passengerDetails.last
   passenger1Phone = passenger1.passengerDetails.phoneNumber
@@ -44,8 +49,6 @@ function pageLoad() {
   passenger3DropoffAddressLine2 = passenger3.dropoffLocation.city + ', ' + passenger3.dropoffLocation.state + ' ' + passenger3.dropoffLocation.zip
 
 
-  console.log(levelOfService)
-
   console.log(passenger1Name)
   console.log(passenger1Phone)
   console.log(passenger1NumberOfPassengers)
@@ -69,8 +72,7 @@ function pageLoad() {
   console.log(passenger3PickupAddressLine2)
   console.log(passenger3DropoffAddressLine1)
   console.log(passenger3DropoffAddressLine2)
-
-
+  
 
   // these variables map to the elements on the finished page;
   // assign the proper value to each variable
