@@ -18,7 +18,7 @@ function pageLoad() {
 
   console.log(levelOfService)
 
-  if (ride.length = 1){
+  if (ride.length == 1){
     passenger1Name = ride[0].passengerDetails.first + ' ' + ride[0].passengerDetails.last
     passenger1Phone = ride[0].passengerDetails.phoneNumber
     passenger1NumberOfPassengers = ride[0].numberOfPassengers
@@ -33,7 +33,7 @@ function pageLoad() {
     console.log(passenger1PickupAddressLine2)
     console.log(passenger1DropoffAddressLine1)
     console.log(passenger1DropoffAddressLine2)
-  } else if (ride.length = 2) {
+  } else if (ride.length == 2) {
     passenger1Name = ride[0].passengerDetails.first + ' ' + ride[0].passengerDetails.last
     passenger1Phone = ride[0].passengerDetails.phoneNumber
     passenger1NumberOfPassengers = ride[0].numberOfPassengers
@@ -62,7 +62,7 @@ function pageLoad() {
     console.log(passenger2PickupAddressLine2)
     console.log(passenger2DropoffAddressLine1)
     console.log(passenger2DropoffAddressLine2)
-  } else if (ride.length = 3)  {
+  } else if (ride.length == 3)  {
     passenger1Name = ride[0].passengerDetails.first + ' ' + ride[0].passengerDetails.last
     passenger1Phone = ride[0].passengerDetails.phoneNumber
     passenger1NumberOfPassengers = ride[0].numberOfPassengers
@@ -90,7 +90,7 @@ function pageLoad() {
     console.log(passenger2PickupAddressLine1)
     console.log(passenger2PickupAddressLine2)
     console.log(passenger2DropoffAddressLine1)
-    console.log(passenger2DropoffAddressLine2)}
+    console.log(passenger2DropoffAddressLine2)
     passenger3Name = ride[2].passengerDetails.first + ' ' + ride[2].passengerDetails.last
     passenger3Phone = ride[2].passengerDetails.phoneNumber
     passenger3NumberOfPassengers = ride[2].numberOfPassengers
@@ -106,7 +106,7 @@ function pageLoad() {
     console.log(passenger3DropoffAddressLine1)
     console.log(passenger3DropoffAddressLine2)
   }
-
+}
 
 
   
