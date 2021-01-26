@@ -10,11 +10,25 @@ function pageLoad() {
 
   if (ride.length > 1) {
     levelOfService = 'Noober Pool'
-  } else if (ride.purplerequested = true) {
-    levelOfService = 'Noober Purple'
-  } else if (ride.numberOfPassengers > 3) {
-    levelOfService = 'Noober XL'
-  } else {levelOfService = 'Noober X'}
+  } else if (ride.length == 1) {
+      if(ride[0].purpleRequested == true) {
+      levelOfService = 'Noober Purple'} 
+      else if (ride[0].numberOfPassengers > 3) {
+      levelOfService = 'Noober XL'}
+      else {levelOfService = 'Noober X'}
+  } else if (ride.length == 2) {
+      if(ride[0].purpleRequested == true || ride[1].purpleRequested == true) {
+      levelOfService = 'Noober Purple'} 
+      else if (ride[0].numberOfPassengers > 3 || ride[1].numberOfPassengers > 3) {
+      levelOfService = 'Noober XL'}
+      else {levelOfService = 'Noober X'}
+  } else if (ride.length == 3) {
+      if(ride[0].purpleRequested == true || ride[1].purpleRequested == true || ride[2].purpleRequested == true) {
+      levelOfService = 'Noober Purple'} 
+      else if (ride[0].numberOfPassengers > 3 || ride[1].numberOfPassengers > 3 || ride[2].numberOfPassengers > 3) {
+      levelOfService = 'Noober XL'}
+      else {levelOfService = 'Noober X'}
+  }
 
   console.log(levelOfService)
 
